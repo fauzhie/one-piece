@@ -1,0 +1,64 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fefefe;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+header {
+  background-color: #e60000;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 30px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  border-bottom: 2px solid #e60000;
+  padding-bottom: 5px;
+}
+
+.luffy-img {
+  width: 200px;
+  border-radius: 10px;
+  display: block;
+  margin: 20px auto;
+}
+
+.galeri-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.galeri-container img {
+  width: 150px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.galeri-container img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #222;
+  color: #eee;
+  font-size: 14px;
+}

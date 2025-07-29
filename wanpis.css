@@ -1,0 +1,130 @@
+body {
+    font-family: "Segoe UI",sans-serif;
+    background-color: #f8f8f8;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin-top: 30px;
+    color: #333;
+}
+
+.luffy-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:0 auto ;
+    max-width: 100%;
+}
+
+.crew-row{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transition: transform 0.3s ease;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.card-luffy:hover {
+    transform: scale(1.4);
+    background-color: #fd0000;
+}
+.card-1:hover {
+    transform: translateX(10px) scale(1.1) rotate(15deg);
+    background-color: #076445;
+}
+
+.card-2:hover {
+    transform: translateY(10px) scale(1.1) rotate(-15deg);
+    background-color: #fd4c06;
+}
+.card-3:hover {
+    transform: scale(1.2);
+    background-color: #8a4f1f;
+}
+.card-4:hover {
+    transform: translateX(10px) scale(1.1) rotate(15deg);
+    background-color: #fffb09;
+}
+.card-5:hover {
+    transform: translateY(10px) scale(1.1) rotate(-15deg);
+    background-color: #0dcad8;
+}
+.card-6:hover {
+    transform: translateX(10px) scale(1.1) rotate(15deg);
+    background-color: #000000;
+}
+.card-7:hover {
+    transform: translateX(10px) scale(1.1) rotate(15deg);
+    background-color: #4e0a4e;
+}
+.card-8:hover {
+    transform: translateY(10px) scale(1.1) rotate(-15deg);
+    background-color: #76a58f;
+}
+.card-9:hover {
+    transform: translateY(10px) scale(1.1) rotate(-15deg);
+    background-color: #0223b3;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+ .card img{
+    width: 100px;
+    min-width: 120px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.role {
+    font-size: 14px;
+    color: #534848;
+    justify-content: left;
+}
+.deskripsi {
+    font-size: 12px;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 5px;
+    }
+
+@media (max-width: 600px) {
+    .crew-row {
+      flex-direction: column;      /* kartu ditumpuk vertikal */
+      align-items: center;         /* posisi kartu di tengah */
+    }
+  
+    .card {
+      width: 80%;                  /* kartu jadi lebih lebar dan enak dilihat */
+      margin-bottom: 20px;         /* beri jarak antar kartu */
+    }
+  
+    .card img {
+      width: 100%;                 /* gambar ikut melebar sesuai kartu */
+      height: auto;                /* biar proporsional */
+    }
+  }
+  
